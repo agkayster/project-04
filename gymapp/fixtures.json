@@ -78,9 +78,9 @@
   "model": "gymapp.exercise",
   "pk": 3,
   "fields": {
-    "name": "Squats",
-    "description": "Squats are ideal if you have back problems. Since they\u2019re done while standing up and without extra weight, they won\u2019t strain the back.",
-    "image": "https://media1.popsugar-assets.com/files/thumbor/iFJhm2cqTKjrLWYP-wJjq9Kc3ZQ/fit-in/2048xorig/filters:format_auto-!!-:strip_icc-!!-/2017/01/19/791/n/1922729/0fd3a596dea90b2b_EXAMPLE.squathops.gif",
+    "name": "Side planks",
+    "description": "A healthy body requires a strong core at its foundation, so don’t neglect core-specific moves like the side plank. Focus on the mind-muscle connection and controlled movements to ensure you’re completing this move effectively",
+    "image": "https://thumbs.gfycat.com/AmpleCleverHoneybadger-max-1mb.gif",
     "categories": [
       7
     ]
