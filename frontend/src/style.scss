@@ -69,6 +69,12 @@ body {
   padding: 0.5rem 0;
 }
 
+@media only screen and (max-width: 425px) {
+  .navbar-burger {
+      color: yellow;
+  }
+}
+
 //All Background images
 
 .login-background {
