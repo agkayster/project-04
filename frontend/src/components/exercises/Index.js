@@ -1,46 +1,46 @@
-import React from "react";
-import axios from "axios";
-import Select from "react-select";
+import React from 'react'
+import axios from 'axios'
+import Select from 'react-select'
 
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom'
 
 class ExercisesIndex extends React.Component {
   constructor() {
-    super();
+    super()
     this.state = {
-      selectedCategory: null,
-    };
-    this.handleChange = this.handleChange.bind(this);
+      selectedCategory: null
+    }
+    this.handleChange = this.handleChange.bind(this)
   }
 
   handleChange(selectedOption) {
-    this.setState({ selectedCategory: selectedOption.value });
+    this.setState({ selectedCategory: selectedOption.value })
   }
 
   componentDidMount() {
     axios
-      .get("/api/exercises")
-      .then((res) => this.setState({ exercises: res.data }));
+      .get('/api/exercises')
+      .then((res) => this.setState({ exercises: res.data }))
 
-    axios.get("/api/categories/").then((res) =>
+    axios.get('/api/categories/').then((res) =>
       this.setState({
         categories: res.data.map((option) => {
-          return { label: option.name, value: option.id };
-        }),
+          return { label: option.name, value: option.id }
+        })
       })
-    );
+    )
   }
 
   filterExercises() {
-    if (!this.state.selectedCategory) return this.state.exercises;
+    if (!this.state.selectedCategory) return this.state.exercises
     return this.state.exercises.filter((exercise) =>
       exercise.categories.includes(this.state.selectedCategory)
-    );
+    )
   }
 
   render() {
-    console.log(this.state, "NEW");
-    const { selectedOption } = this.state;
+    console.log(this.state, 'NEW')
+    const { selectedOption } = this.state
     return (
       <section className="section">
         <div className="container">
@@ -80,8 +80,8 @@ class ExercisesIndex extends React.Component {
           <div className="footer-spacing-exercises"></div>
         </div>
       </section>
-    );
+    )
   }
 }
 
-export default ExercisesIndex;
+export default ExercisesIndex
