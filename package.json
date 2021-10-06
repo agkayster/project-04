@@ -46,7 +46,7 @@
     "sockjs": "^0.3.21",
     "ssri": "^8.0.1",
     "style-loader": "^1.0.0",
-    "url-parse": "^1.5.1",
+    "url-parse": "^1.5.2",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.7",
     "websocket-extensions": "^0.1.4",
