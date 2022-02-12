@@ -26,7 +26,7 @@
     "dns-packet": "^5.3.1",
     "elliptic": "^6.5.4",
     "file-loader": "^4.2.0",
-    "follow-redirects": "^1.14.7",
+    "follow-redirects": "^1.14.8",
     "glob-parent": "^6.0.2",
     "hosted-git-info": "^4.1.0",
     "html-webpack-plugin": "^3.2.0",
